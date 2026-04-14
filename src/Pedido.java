@@ -50,7 +50,12 @@ public class Pedido {
                 this.status = StatusPedido.ENTREGUE;
                 break;
             case ENTREGUE:
+                IO.println("Status final: " + this.status);
+                IO.println("Pedido entregue não é possivel alterar");
+                break;
             case CANCELADO:
+                IO.println("Status final: " + this.status);
+                IO.println("Pedido Cancelado não é possivel alterar");
                 break;
             default:
                 this.status = StatusPedido.AGUARDANDO_PAGAMENTO;
